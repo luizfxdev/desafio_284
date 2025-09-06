@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador ASCII</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Vídeo de fundo -->
+    <video id="background-video" autoplay loop muted>
+      <source src="assets/background.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeos HTML5.
+    </video>
+
+    <div class="container">
+      <div class="header">
+        <h1>Decodificador ASCII</h1>
+        <p>
+          Um decodificador ASCII é um dispositivo ou programa que converte códigos binários em caracteres de texto, como
+          letras e números, usando o padrão ASCII, que representa 128 símbolos com 7 bits.
+        </p>
+      </div>
+
+      <div class="input-container">
+        <label for="asciiInput">Códigos ASCII (separados por vírgula):</label>
+        <input type="text" id="asciiInput" placeholder="Ex: 72, 69, 76, 76, 79, 32, 87, 79, 82, 76, 68" tabindex="1" />
+      </div>
+
+      <div class="buttons-container">
+        <button style="--clr: #00ffff" id="decipherBtn" tabindex="2"><span>DECIFRAR</span><i></i></button>
+        <button style="--clr: #ff00ff" id="returnBtn" tabindex="3"><span>RETORNAR</span><i></i></button>
+      </div>
+
+      <div class="result-container">
+        <h2>Resultado da Decodificação</h2>
+        <div class="calculation" id="calculationSteps">
+          <!-- Área onde os passos do cálculo serão exibidos -->
+          Insira os códigos e clique em DECIFRAR para ver o processo de decodificação.
+        </div>
+        <div class="final-result" id="finalResult">
+          <!-- Resultado será exibido aqui após a decodificação -->
+        </div>
+      </div>
+
+      <div class="example">
+        <h3>Exemplo:</h3>
+        <p>Entrada: 72, 69, 76, 76, 79, 32, 87, 79, 82, 76, 68</p>
+        <p>Saída: HELLO WORLD</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
